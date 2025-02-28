@@ -31,6 +31,10 @@ target_link_libraries(korelib PUBLIC
     fmt
 )
 
+target_include_directories(korelib PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}/Source
+)
+
 if (KORELIB_ENABLE_ASSERTIONS)
     target_compile_definitions(korelib PUBLIC
         KORELIB_ENABLE_ASSERTIONS
