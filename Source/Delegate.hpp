@@ -16,7 +16,10 @@ namespace korelib
         {
         }
 
-        ~Delegate() = default;
+        ~Delegate()
+        {
+            unbind();
+        }
 
         bool isBound() const
         {
@@ -26,6 +29,11 @@ namespace korelib
         void bind(std::function<ReturnType(Parameters...)> func)
         {
             m_function = func;
+        }
+
+        void unbind()
+        {
+            m_function = std::nullopt;
         }
 
         template <class... Args>
