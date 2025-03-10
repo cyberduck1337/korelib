@@ -25,6 +25,7 @@ add_library(korelib ${KORELIB_BUILD_TYPE}
     Source/Delegate.hpp
     Source/RuntimeException.hpp
     Source/RuntimeException.cpp
+    Source/StandardStreamWrapper.hpp
 )
 
 target_link_libraries(korelib PUBLIC

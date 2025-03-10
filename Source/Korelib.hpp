@@ -4,3 +4,4 @@
 #include "Delegate.hpp"
 #include "RuntimeException.hpp"
 #include "StaticOnlyClass.hpp"
+#include "StandardStreamWrapper.hpp"
