@@ -23,6 +23,8 @@ FetchContent_MakeAvailable(backward)
 add_library(korelib ${KORELIB_BUILD_TYPE}
     Source/Assertion.hpp
     Source/Delegate.hpp
+    Source/MemoryUtils.hpp
+    Source/MemoryUtils.cpp
     Source/RuntimeException.hpp
     Source/RuntimeException.cpp
     Source/StandardStreamWrapper.hpp
